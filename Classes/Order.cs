@@ -32,8 +32,7 @@ namespace Bakery
             }
             else if (numPastries % 3 == 0 || numPastries > 3)
             {
-                int pastryDeal = numPastries / 3;
-                total += ((numPastries - pastryDeal) * 2 + (pastryDeal * 5));
+                total += ((numPastries - numPastries / 3) * Pastry.Price + (numPastries / 3 * 5));
             }
 
         }
