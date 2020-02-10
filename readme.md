@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Pierre's Bakery_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _C# app for a bakery, 2-10-2020_
 
-#### By _**{List of contributors}**_
+#### By _**BM**_
 
 ## Description
 
