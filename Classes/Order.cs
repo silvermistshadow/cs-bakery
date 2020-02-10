@@ -4,18 +4,13 @@ using System.Numerics;
 
 namespace Bakery
 {
-    class Order
+    static class Order
     {
-        private int _total;
+        private static int _total = 0;
 
-        public Order()
-        {
-            Total = 0;
-        }
+        public static int Total { get => _total; set => _total = value; }
 
-        public int Total { get => _total; set => _total = value; }
-
-        public void addTotal(int numBread, int numPastries)
+        public static void addTotal(int numBread, int numPastries)
         {   int total = 0;
             if(numBread == 1 || numBread == 2)
             {
@@ -34,6 +29,8 @@ namespace Bakery
             {
                 total += ((numPastries - numPastries / 3) * Pastry.Price + (numPastries / 3 * 5));
             }
+            Total = total;
+            
 
         }
     }
