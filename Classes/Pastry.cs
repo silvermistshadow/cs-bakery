@@ -4,14 +4,9 @@ using System.Numerics;
 
 namespace Bakery 
 {
-    public class Pastry
+    public static class Pastry
     {
-        private int _price;
-        public Pastry()
-        {
-            Price = 5;
-        }
-
-        public int Price { get => _price; set => _price = value; }
+        private static int _price = 2;
+        public static int Price { get => _price; set => _price = value; }
     }
 }
