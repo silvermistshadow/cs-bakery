@@ -1,10 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Numerics;
 
 namespace Bakery
 {
-    class main
+    class Program
     {
         public static void Main()
         {
@@ -23,7 +21,7 @@ namespace Bakery
                 numBread = Int32.Parse(Console.ReadLine());
             }
             finally 
-            {
+            {   Console.WriteLine("How many pastries would you like?");
                 try 
                 {
                 numPastries = Int32.Parse(Console.ReadLine());
@@ -37,12 +35,8 @@ namespace Bakery
 
             Order.addTotal(numBread, numPastries);
 
-            Console.WriteLine($"Your total is {Order.Total}");
-
-            
+            Console.WriteLine($"Your total is ${Order.Total}");
 
         }
     }
-
-    
 }

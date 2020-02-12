@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Numerics;
-
 namespace Bakery
 {
-    static class Order
+    public static class Order
     {
         private static int _total = 0;
 
